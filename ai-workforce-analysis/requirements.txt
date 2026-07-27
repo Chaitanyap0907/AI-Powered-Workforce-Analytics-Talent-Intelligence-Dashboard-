@@ -1,0 +1,18 @@
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+# The tracked model artifacts were trained with 1.8.0. Pinning this avoids
+# unsafe/unreliable joblib deserialization across scikit-learn versions.
+scikit-learn==1.8.0
+xgboost>=2.0
+shap>=0.44
+streamlit>=1.30
+plotly>=5.18
+joblib>=1.3
+requests>=2.31
+boto3>=1.34
+pypdf>=4.0
+
+# Optional - only needed if you run aws/launch_sagemaker_training.py / deploy_endpoint.py
+# sagemaker>=2.200
